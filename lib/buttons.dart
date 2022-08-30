@@ -33,23 +33,3 @@ class YoButton extends StatelessWidget {
     );
   }
 }
-
-enum ButtonSize {
-  large,
-  medium,
-  small,
-}
-
-enum ButtonColor {
-  primary,
-  success,
-  info,
-  warning,
-  danger,
-  secondary,
-}
-
-enum StyleButton {
-  solid,
-  outline,
-}

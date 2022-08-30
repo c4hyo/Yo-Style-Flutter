@@ -18,6 +18,26 @@ Color assignColor(ButtonColor buttonColor) {
   }
 }
 
+enum ButtonSize {
+  large,
+  medium,
+  small,
+}
+
+enum ButtonColor {
+  primary,
+  success,
+  info,
+  warning,
+  danger,
+  secondary,
+}
+
+enum StyleButton {
+  solid,
+  outline,
+}
+
 EdgeInsets paddingButton(ButtonSize buttonSize) {
   if (buttonSize.name == "large") {
     return const EdgeInsets.fromLTRB(24, 16, 24, 16);

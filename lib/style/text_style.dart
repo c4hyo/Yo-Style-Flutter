@@ -80,3 +80,30 @@ assignTextColor(TextColor textColor) {
       return kDarkColor;
   }
 }
+
+enum TextColor {
+  primary,
+  success,
+  info,
+  warning,
+  danger,
+  dark,
+  light,
+}
+
+enum TextType {
+  regular,
+  medium,
+  semibold,
+  bold,
+}
+
+enum TextSize {
+  xs,
+  small,
+  base,
+  large,
+  xl,
+  xxl,
+  xxxl,
+}

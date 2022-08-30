@@ -15,10 +15,10 @@ class YoText {
   final TextColor color;
   final bool isUnderline;
   YoText({
-    required this.color,
+    this.color = TextColor.dark,
     this.isUnderline = false,
-    required this.textSize,
-    required this.textType,
+    this.textSize = TextSize.base,
+    this.textType = TextType.regular,
   });
 }
 

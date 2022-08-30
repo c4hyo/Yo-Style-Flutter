@@ -39,12 +39,13 @@ enum StyleButton {
 }
 
 EdgeInsets paddingButton(ButtonSize buttonSize) {
-  if (buttonSize.name == "large") {
-    return const EdgeInsets.fromLTRB(24, 16, 24, 16);
-  } else if (buttonSize.name == "medium") {
-    return const EdgeInsets.fromLTRB(20, 12, 20, 12);
-  } else {
-    return const EdgeInsets.fromLTRB(16, 8, 16, 8);
+  switch (buttonSize) {
+    case ButtonSize.large:
+      return const EdgeInsets.fromLTRB(24, 16, 24, 16);
+    case ButtonSize.medium:
+      return const EdgeInsets.fromLTRB(20, 12, 20, 12);
+    default:
+      return const EdgeInsets.fromLTRB(16, 8, 16, 8);
   }
 }
 

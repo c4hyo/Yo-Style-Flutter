@@ -76,7 +76,7 @@ ButtonStyle outlineButton(ButtonColor buttonColor, ButtonSize buttonSize) {
                 ? 40
                 : 36)),
     overlayColor: MaterialStateColor.resolveWith(
-        (states) => assignColor(buttonColor).withOpacity(0.3)),
+        (states) => assignColor(buttonColor).withOpacity(0.25)),
     backgroundColor: MaterialStateProperty.all<Color>(SecondaryColor.c50),
     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
       RoundedRectangleBorder(

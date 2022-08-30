@@ -35,9 +35,9 @@ YoButton(
     ButtonColor buttonColor,
     Widget child,
 ),
-ButtonSize option => large, medium, and small
-StyleButton option => solid, and outline
-ButtonColor option => primary, success, info, warning, danger, and secondary,
+ButtonSize [large, medium, and small]
+StyleButton [ solid, and outline]
+ButtonColor [ primary, success, info, warning, danger, and secondary,]
 ```
 
 ## Additional information

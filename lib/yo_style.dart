@@ -1,3 +1,8 @@
+// Yo Style
+// Create By Muchammad Dwi Cahyo Nugroho
+//
+// 30/08/2022
+
 library yo_style;
 
 export 'colors.dart';

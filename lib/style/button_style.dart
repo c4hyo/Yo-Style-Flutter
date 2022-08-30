@@ -1,5 +1,9 @@
-import 'package:flutter/material.dart';
+// Yo Style
+// Create By Muchammad Dwi Cahyo Nugroho
+//
+// 30/08/2022
 
+import 'package:flutter/material.dart';
 import '../yo_style.dart';
 
 Color assignColor(ButtonColor buttonColor) {

@@ -1,5 +1,10 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors
 
+// Yo Style
+// Create By Muchammad Dwi Cahyo Nugroho
+//
+// 30/08/2022
+
 import 'package:flutter/material.dart';
 import 'package:yo_style/yo_style.dart';
 

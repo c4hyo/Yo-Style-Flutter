@@ -1,3 +1,8 @@
+// Yo Style
+// Create By Muchammad Dwi Cahyo Nugroho
+//
+// 30/08/2022
+
 import 'package:flutter/material.dart';
 
 final Color kPrimaryColor = PrimaryColor.c500;

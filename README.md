@@ -25,11 +25,19 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+YoButton
 
 ```dart
-YoText()
+YoButton(
+    VoidCallback onPressed,
+    ButtonSize buttonSize,
+    StyleButton styleButton,
+    ButtonColor buttonColor,
+    Widget child,
+),
+ButtonSize option => large, medium, and small
+StyleButton option => solid, and outline
+ButtonColor option => primary, success, info, warning, danger, and secondary,
 ```
 
 ## Additional information

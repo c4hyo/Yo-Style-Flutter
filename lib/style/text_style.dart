@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:yo_style/colors.dart';
-import 'package:yo_style/text.dart';
 
 class YoSize {
   static double xs = 12;

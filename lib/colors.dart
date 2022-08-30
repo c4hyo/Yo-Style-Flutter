@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final Color kPrimaryColor = PrimaryColor.c500;
-final Color kDarkColor = SecondaryColor.c500;
+final Color kDarkColor = SecondaryColor.c900;
 final Color kLightColor = SecondaryColor.c100;
 final Color kSuccessColor = SuccessColor.c500;
 final Color kInfoColor = InfoColor.c500;

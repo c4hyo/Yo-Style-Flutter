@@ -39,4 +39,8 @@ class DateHelper {
   static String timeOnly(DateTime date) {
     return DateFormat("h:m a").format(date);
   }
+
+  static String customDate(DateTime date, {required String format}) {
+    return DateFormat(format).format(date);
+  }
 }

@@ -79,6 +79,8 @@ assignTextColor(TextColor textColor) {
       return kWarningColor;
     case TextColor.success:
       return kSuccessColor;
+    case TextColor.grey:
+      return SecondaryColor.c100;
 
     default:
       return kDarkColor;
@@ -93,6 +95,7 @@ enum TextColor {
   danger,
   dark,
   light,
+  grey,
 }
 
 enum TextType {

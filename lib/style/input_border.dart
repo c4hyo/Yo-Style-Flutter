@@ -12,20 +12,11 @@ enum InputBorderType {
   none,
 }
 
-enum BorderColor {
-  primary,
-  success,
-  info,
-  warning,
-  danger,
-  dark,
-}
-
 class YoInputBorder {
   static type({
     required InputBorderType inputBorderType,
     double radiusBorder = 8,
-    required BorderColor borderColor,
+    required Color borderColor,
   }) {
     switch (inputBorderType) {
       case InputBorderType.outline:
@@ -34,7 +25,7 @@ class YoInputBorder {
           borderSide: BorderSide(
             width: 1.5,
             style: BorderStyle.solid,
-            color: assignBorderColor(borderColor),
+            color: borderColor,
           ),
         );
       case InputBorderType.underline:
@@ -42,31 +33,11 @@ class YoInputBorder {
           borderSide: BorderSide(
             width: 1.5,
             style: BorderStyle.solid,
-            color: assignBorderColor(borderColor),
+            color: borderColor,
           ),
         );
       default:
         return InputBorder.none;
     }
-  }
-}
-
-assignBorderColor(BorderColor borderColor) {
-  switch (borderColor) {
-    case BorderColor.primary:
-      return kPrimaryColor;
-    case BorderColor.danger:
-      return kDangerColor;
-    case BorderColor.dark:
-      return kDarkColor;
-    case BorderColor.info:
-      return kInfoColor;
-    case BorderColor.warning:
-      return kWarningColor;
-    case BorderColor.success:
-      return kSuccessColor;
-
-    default:
-      return kDarkColor;
   }
 }

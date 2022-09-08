@@ -128,7 +128,7 @@ class YoColors {
 
   static const MaterialColor neutral =
       MaterialColor(_neutralPrimaryValue, <int, Color>{
-    50: Color(0xFFE5E5E8),
+    50: Color(0xFFF5F5F8),
     100: Color(0xFFBEBFC5),
     200: Color(0xFF92949E),
     300: Color(0xFF666977),

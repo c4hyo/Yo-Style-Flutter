@@ -57,8 +57,7 @@ ButtonStyle outlineButton(Color buttonColor, ButtonSize buttonSize) {
                 : 36)),
     overlayColor: MaterialStateColor.resolveWith(
         (states) => buttonColor.withOpacity(0.25)),
-    backgroundColor:
-        MaterialStateProperty.all<Color>(YoColors.neutral.shade100),
+    backgroundColor: MaterialStateProperty.all<Color>(YoColors.neutral.shade50),
     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
       RoundedRectangleBorder(
         side: BorderSide(color: buttonColor, width: 1.5),

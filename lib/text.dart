@@ -6,16 +6,15 @@
 // 30/08/2022
 
 import 'package:flutter/material.dart';
-import 'package:yo_style/style/text_style.dart';
 import 'package:yo_style/yo_style.dart';
 
 class YoText {
   final TextType textType;
   final TextSize textSize;
-  final TextColor color;
+  final Color textColor;
   final bool isUnderline;
   YoText({
-    this.color = TextColor.dark,
+    this.textColor = YoColors.neutral,
     this.isUnderline = false,
     this.textSize = TextSize.base,
     this.textType = TextType.regular,
@@ -27,8 +26,8 @@ class YoTextStyle {
     return TextStyle(
       fontWeight: assignTextType(yoText.textType),
       fontSize: assignTextSize(yoText.textSize),
-      color: assignTextColor(yoText.color),
       fontStyle: yoText.isUnderline ? FontStyle.italic : FontStyle.normal,
+      color: yoText.textColor,
     );
   }
 }

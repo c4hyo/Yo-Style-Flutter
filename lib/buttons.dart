@@ -14,14 +14,16 @@ class YoButton extends StatelessWidget {
   final ButtonSize buttonSize;
   final StyleButton styleButton;
   final Color buttonColor;
-  final Widget child;
+  final bool isExpand;
+  final List<Widget> children;
 
   YoButton({
     required this.onPressed,
     this.buttonSize = ButtonSize.medium,
     this.styleButton = StyleButton.solid,
     required this.buttonColor,
-    required this.child,
+    this.isExpand = false,
+    required this.children,
   });
 
   @override
@@ -33,7 +35,10 @@ class YoButton extends StatelessWidget {
       onPressed: onPressed,
       child: Container(
         padding: paddingButton(buttonSize),
-        child: child,
+        child: Row(
+          mainAxisSize: isExpand == true ? MainAxisSize.max : MainAxisSize.min,
+          children: children,
+        ),
       ),
     );
   }

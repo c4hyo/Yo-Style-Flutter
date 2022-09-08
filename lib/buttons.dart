@@ -13,7 +13,7 @@ class YoButton extends StatelessWidget {
 
   final ButtonSize buttonSize;
   final StyleButton styleButton;
-  final ButtonColor buttonColor;
+  final Color buttonColor;
   final Widget child;
 
   YoButton({

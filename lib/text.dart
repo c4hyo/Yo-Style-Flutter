@@ -8,26 +8,18 @@
 import 'package:flutter/material.dart';
 import 'package:yo_style/yo_style.dart';
 
-class YoText {
-  final TextType textType;
-  final TextSize textSize;
-  final Color textColor;
-  final bool isUnderline;
-  YoText({
-    this.textColor = YoColors.neutral,
-    this.isUnderline = false,
-    this.textSize = TextSize.base,
-    this.textType = TextType.regular,
-  });
-}
-
 class YoTextStyle {
-  static TextStyle style(YoText yoText) {
+  static TextStyle style({
+    textColor = YoColors.neutral,
+    isUnderline = false,
+    textSize = TextSize.base,
+    textType = TextType.regular,
+  }) {
     return TextStyle(
-      fontWeight: assignTextType(yoText.textType),
-      fontSize: assignTextSize(yoText.textSize),
-      fontStyle: yoText.isUnderline ? FontStyle.italic : FontStyle.normal,
-      color: yoText.textColor,
+      fontWeight: assignTextType(textType),
+      fontSize: assignTextSize(textSize),
+      fontStyle: isUnderline ? FontStyle.italic : FontStyle.normal,
+      color: textColor,
     );
   }
 }

@@ -37,6 +37,7 @@ class YoButton extends StatelessWidget {
         padding: paddingButton(buttonSize),
         child: Row(
           mainAxisSize: isExpand == true ? MainAxisSize.max : MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: children,
         ),
       ),

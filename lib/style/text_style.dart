@@ -4,7 +4,6 @@
 // 30/08/2022
 
 import 'package:flutter/material.dart';
-import 'package:yo_style/colors.dart';
 
 class YoSize {
   static double xs = 12;
@@ -61,41 +60,6 @@ assignTextType(TextType textType) {
     default:
       return FontWeight.w400;
   }
-}
-
-assignTextColor(TextColor textColor) {
-  switch (textColor) {
-    case TextColor.primary:
-      return kPrimaryColor;
-    case TextColor.danger:
-      return kDangerColor;
-    case TextColor.dark:
-      return kDarkColor;
-    case TextColor.light:
-      return kLightColor;
-    case TextColor.info:
-      return kInfoColor;
-    case TextColor.warning:
-      return kWarningColor;
-    case TextColor.success:
-      return kSuccessColor;
-    case TextColor.grey:
-      return SecondaryColor.c100;
-
-    default:
-      return kDarkColor;
-  }
-}
-
-enum TextColor {
-  primary,
-  success,
-  info,
-  warning,
-  danger,
-  dark,
-  light,
-  grey,
 }
 
 enum TextType {

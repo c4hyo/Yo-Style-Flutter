@@ -9,14 +9,14 @@ import 'package:flutter/material.dart';
 
 import 'package:yo_style/yo_style.dart';
 
-/// font size for large button = 18 & icon size = 24
-///
-/// font size for medium button 16 & icon size = 20
-///
-/// font size for small button 14 & icon size 16
-///
-///
 class YoButton2 extends StatelessWidget {
+// font size for large button = 18 & icon size = 24
+  ///
+  /// font size for medium button 16 & icon size = 20
+  ///
+  /// font size for small button 14 & icon size 16
+  ///
+  ///
   final VoidCallback onPressed;
   final ButtonSize buttonSize;
   final StyleButton styleButton;
@@ -37,11 +37,6 @@ class YoButton2 extends StatelessWidget {
       child: InkWell(
         onTap: onPressed,
         child: Container(
-          height: buttonSize.name == "large"
-              ? 56
-              : buttonSize.name == "medium"
-                  ? 40
-                  : 36,
           decoration: styleButton.name == "solid"
               ? solidButton2(buttonColor, buttonSize)
               : outlineButton2(buttonColor, buttonSize),

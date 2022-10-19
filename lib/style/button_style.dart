@@ -20,9 +20,9 @@ enum StyleButton {
 EdgeInsets paddingButton(ButtonSize buttonSize) {
   switch (buttonSize) {
     case ButtonSize.large:
-      return const EdgeInsets.fromLTRB(24, 16, 24, 16);
+      return const EdgeInsets.fromLTRB(20, 19, 20, 19);
     case ButtonSize.medium:
-      return const EdgeInsets.fromLTRB(20, 12, 20, 12);
+      return const EdgeInsets.fromLTRB(16, 12, 16, 12);
     default:
       return const EdgeInsets.fromLTRB(16, 8, 16, 8);
   }
@@ -65,4 +65,22 @@ ButtonStyle outlineButton(Color buttonColor, ButtonSize buttonSize) {
       ),
     ),
   );
+}
+
+BoxDecoration solidButton2(Color buttonColor, ButtonSize buttonSize) {
+  return BoxDecoration(
+    color: buttonColor,
+    borderRadius: BorderRadius.circular(8),
+  );
+}
+
+BoxDecoration outlineButton2(Color buttonColor, ButtonSize buttonSize) {
+  return BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(8),
+      border: Border.all(
+        color: buttonColor,
+        width: 1.5,
+        style: BorderStyle.solid,
+      ));
 }

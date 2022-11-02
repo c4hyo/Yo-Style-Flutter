@@ -71,6 +71,11 @@ BoxDecoration solidButton2(Color buttonColor, ButtonSize buttonSize) {
   return BoxDecoration(
     color: buttonColor,
     borderRadius: BorderRadius.circular(8),
+    border: Border.all(
+        color: buttonColor,
+        width: 1.5,
+        style: BorderStyle.solid,
+      )
   );
 }
 
